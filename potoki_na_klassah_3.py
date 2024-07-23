@@ -1,4 +1,4 @@
-
+from time import sleep
 class Knight:
     INVADERS = 100
     day = 0
@@ -9,6 +9,8 @@ class Knight:
             self.day = self.day + 1
             self.INVADERS = self.INVADERS - self.skills
             print(f"сражается {self.day} дней, осталось {self.INVADERS} воинов")
+            sleep(1)
+
 
 
 my_obj = Knight()
